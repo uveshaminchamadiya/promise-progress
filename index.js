@@ -8,4 +8,5 @@ const getProgress = (percentage) => {
   console.log(`${percentage}% completed`);
 }
 
-runPromise(promises, getProgress);
+const res = await runPromise(promises, getProgress);
+console.log("Response: ", res);
